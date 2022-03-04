@@ -117,4 +117,13 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-cd ~/Documents/Code
+# cd ~/Documents/Code
+
+export START="~/Documents/Code"
+if [[ $PWD == $HOME ]]; then
+	    cd $START
+fi
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
