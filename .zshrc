@@ -117,8 +117,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-# cd ~/Documents/Code
-
+# Sets default working directory as "~/Documents/Code"
 export START="~/Documents/Code"
 if [[ $PWD == $HOME ]]; then
 	    cd $START
